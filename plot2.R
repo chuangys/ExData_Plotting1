@@ -15,6 +15,6 @@ head(Final_Data); tail(Final_Data);dim(Final_Data);
 #?as.Date
 plot(x=strptime(paste(Final_Data$Date,Final_Data$Time),format = "%d/%m/%Y %H:%M:%S"), y=Final_Data$Global_active_power, 
      type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
-)
+
 dev.copy(png, file = "plot2.png", width=480, height=480)
 dev.off()
